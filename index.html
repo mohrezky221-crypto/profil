@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Saya - Moh. Rezky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title" title="Halaman Profil Pribadi">Profil Pribadi Saya</h1>
+        
+        <img src="goblin.jpg" alt="raja jawa" width="300" height="300" class="profile-img" title="Foto Profil Saya">
+        
+        <h2>Tentang Saya</h2>
+        <p id="nama-lengkap"><strong>Nama Lengkap:</strong> Moh.Rezky</p>
+        <p id="nim-mahasiswa"><strong>NIM:</strong> 246270042</p>
+        <p id="hobi-utama"><strong>Hobi:</strong> Saya menyukai bermain badminton, musik, dan traveling. Saya juga tertarik dengan dunia teknologi dan pemrograman.</p>
+        
+        <h2>Biodata Lengkap</h2>
+        <table class="biodata-table">
+            <tr><th>Keterangan</th><th>Informasi</th></tr>
+            <tr><td>Nama</td><td>Moh.Rezky</td></tr>
+            <tr><td>Tanggal Lahir</td><td>11 Juni 2006</td></tr>
+            <tr><td>Alamat</td><td>Jl. Tanderante</td></tr>
+            <tr><td>Email</td><td>rajasawit0110@gmail.com</td></tr>
+        </table>
+        
+        <h2>Daftar Hobi</h2>
+        <ul>
+            <li>Membaca buku fiksi dan non-fiksi</li>
+            <li>Bermain gitar dan keyboard</li>
+            <li>Traveling dan fotografi</li>
+            <li>Coding dan belajar teknologi baru</li>
+            <li>Bermain game strategi</li>
+        </ul>
+        
+        <h2>Aktivitas Favorit (Berurutan)</h2>
+        <ol>
+            <li>Belajar pemrograman web</li>
+            <li>Mendengarkan musik sambil membaca</li>
+            <li>Bermain badminton dengan teman-teman</li>
+            <li>Menonton film perang</li>
+            <li>Menulis blog tentang teknologi</li>
+        </ol>
+        
+        <h2>Formulir Kontak</h2>
+        <form id="form-kontak">
+            <div class="form-group">
+                <label for="input-nama">Nama:</label>
+                <input type="text" id="input-nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="input-email">Email:</label>
+                <input type="email" id="input-email" placeholder="contoh@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Hobi (pilih yang sesuai):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hobi-membaca" value="Membaca"> <label for="hobi-membaca">Membaca</label><br>
+                    <input type="checkbox" id="hobi-olahraga" value="Olahraga"> <label for="hobi-olahraga">Olahraga</label><br>
+                    <input type="checkbox" id="hobi-musik" value="Musik"> <label for="hobi-musik">Musik</label><br>
+                    <input type="checkbox" id="hobi-traveling" value="Traveling"> <label for="hobi-traveling">Traveling</label><br>
+                    <input type="checkbox" id="hobi-gaming" value="Gaming"> <label for="hobi-gaming">Gaming</label>
+                </div>
+            </div>
+            <button type="submit" id="btn-submit">Kirim Formulir</button>
+        </form>
+    </div>
+
+    <footer>
+        Dibuat dengan ❤️ oleh <a href="#">Moh. Rezky</a> | 2025
+    </footer>
+
+    <script>
+        document.getElementById('form-kontak').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🎉 Terima kasih, formulir kamu sudah terkirim!');
+        });
+    </script>
+</body>
+</html>
